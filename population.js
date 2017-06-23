@@ -48,7 +48,7 @@
     // A higher fitness = more entries to mating pool = more likely to be picked as a parent
     // A lower fitness = fewer entries to mating pool = less likely to be picked as a parent
     for (var i = 0; i < this.population.length; i++) {
-      var fitnessNormal = map(this.population[i].getFitness(),0,maxFitness,0,1);
+      var fitnessNormal = map(this.population[i].getFitness(),0,maxFitness,0,1); // In proportion to max fitness
       var n = floor(fitnessNormal * 100);  // Arbitrary multiplier
     //   console.log("Rocket " + this.population[i].id + " Number of times added: ", n);
       for (var j = 0; j < n; j++) {

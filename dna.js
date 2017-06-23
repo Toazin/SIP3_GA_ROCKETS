@@ -41,7 +41,7 @@ function DNA(newgenes) {
   // Based on a mutation probability, picks a new random Vector
   this.mutate = function(m) {
     for (var i = 0; i < this.genes.length; i++) {
-      if (random(1) < m) {
+      if (random(1) < m) { // The higher mutation rate the moretimes it will mutate its genes.
         var angle = random(TWO_PI);
         this.genes[i] = p5.Vector.fromAngle(angle);
         this.genes[i].mult(random(0, this.maxforce));
