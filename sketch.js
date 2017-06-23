@@ -27,8 +27,8 @@ function setup() {
   target = createVector(width/2, 24);
 
   // Create a population with a mutation rate, and population max
-  var mutationRate = 0.05;
-  population = new Population(mutationRate, 10);
+  var mutationRate = 0.01;
+  population = new Population(mutationRate, 30);
   info = createP("");
   info.position(10,10);
 }
